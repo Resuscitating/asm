@@ -195,7 +195,6 @@ class __proc__:
             self.labels.append(len(self.instrs))
         return self
     def __del__(self):
-        print(self.labels, self.labelnames)
         self.instrs = [self.instmap("JMP", "main")] + self.instrs
         while self.instptr < len(self.instrs):
             inst = self.instrs[self.instptr]
@@ -240,8 +239,7 @@ class __annotations__(dict):
             else:
                 __main__.__proc__ += (key, val)
         except KeyError as e:
-            print(e)
-            print("invalid instruction")
+            print(e, "invalid instruction")
 
 
 __main__.__proc__ = __proc__
