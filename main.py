@@ -2,7 +2,7 @@ import asm; __asm__(globals())
 
 LABEL: pusher;
 PUSH: "llo world";
-PUSH: 69;
+PUSH: 101;
 PUSH: "h"
 JMP: printer;
 
