@@ -10,4 +10,4 @@ import asm; __asm__(globals());
 
 and then just write assembly
 
-if you want to know how the instructions work, read __init__.py, I'm to lazy to write docs
+if you want to know how the instructions work, read `asm/__init__.py`, I'm to lazy to write docs
