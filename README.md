@@ -7,3 +7,6 @@ you use the module by:
 ```py
 import asm; __asm__(globals());
 ```
+
+and then just use assembly
+if you want to know how the instructions work, read __init__.py, I'm to lazy to write docs
